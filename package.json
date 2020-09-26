@@ -1,0 +1,27 @@
+{
+  "name": "codedocs",
+  "version": "1.0.0",
+  "description": "#### git 版本控制",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^1.6.0"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaiyueDamowang/codeDocs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaiyueDamowang/codeDocs/issues"
+  },
+  "homepage": "https://github.com/CaiyueDamowang/codeDocs#readme"
+}
