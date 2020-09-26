@@ -6,9 +6,10 @@
 
 但是每次push之前（最好是打开之前 进行一次拉取代码）
 
-###### git 操作
+##### git 操作
 
 ``` git pull origin master```   拉取远程仓库的最新代码
+``` git fetch && git merge``` 是一样的
 
  改动文件....  
 
@@ -20,3 +21,4 @@
 
 ``` git log ```
 ``` git log --graph```   查看历史提交记录（--graph: 树状图)
+
