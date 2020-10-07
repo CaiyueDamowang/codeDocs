@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>flex布局</title>
+        <style>
+            .box{
+                display: flex;
+                background-color: gray;
+            }
+            .box-item{
+                width: 200px;
+                height: 50px;
+                border-radius: 10px;
+                background-color: gold;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .box-1{
+                /* 四个可能的值 */
+                flex-direction:row;
+                /* flex-direction:row-reverse; */
+                /* flex-direction:column; */
+                /* flex-direction:column-reverse; */
+                
+            }
+
+            .box-2{
+                flex-direction:row;
+                /* 三个可能的值 */
+                /* flex-wrap: nowrap; */ /*定义后item的width会失效 */
+                flex-wrap: wrap;
+                /*flex-wrap: wrap-reverse;*/ /* 反方向换行 */
+                
+            }
+
+            .box-3{
+                flex-direction:row;
+                /* 五个可能的值 */
+                /* justify-content: flex-start; */
+                /* justify-content: flex-end; */
+                /* justify-content: center; */
+                /* justify-content: space-around; */
+                justify-content: space-between;
+            }
+
+            .box-4{
+                flex-direction:row;
+                /* align-items: flex-start; */
+                /* align-items: flex-end; */
+                /* align-items: center; */
+                /* align-items: baseline; */
+                align-items: stretch;
+            }
+
+            .box-5{
+                flex-direction:row;
+            }
+
+            .box-6{
+                flex-direction:row;
+                flex-wrap: nowrap;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <h1>bentou的Flex布局笔记</h1>
+        <h2>1.容器的属性</h2>
+        <h3>1.1 flex-direction: row | row-reverse | column | column-reverse</h3>
+        <p>决定主轴的方向（即项目的排列方向）</p>
+        <div class="box box-1">
+            <div class="box-item"><p>1个</p></div>
+            <div class="box-item"><p>2</p></div>
+            <div class="box-item"><p>3</p></div>
+            <div class="box-item"><p>4</p></div>
+        </div>
+
+        <h3>1.2 flex-wrap: nowrap | wrap | wrap-reverse</h3>
+        <p>默认情况下，项目都排在一条线（又称"轴线"）上。flex-wrap属性定义，如果一条轴线排不下，如何换行。</p>
+        <div class="box box-2">
+            <div class="box-item"><p>1个</p></div>
+            <div class="box-item"><p>2</p></div>
+            <div class="box-item"><p>3</p></div>
+            <div class="box-item"><p>4</p></div>
+        </div>
+
+        <h3>1.3 flex-flow: &lt;flex-direction&gt; || &lt;flex-wrap&gt;</h3>
+        <p>flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。</p>
+
+        <h3>1.4 justify-content: flex-start | flex-end | center | space-between | space-around</h3>
+        <p>justify-content属性定义了项目在主轴上的对齐方式。</p>
+        <div class="box box-3">
+            <div class="box-item" style="width: 200px;"><p>1个</p></div>
+            <div class="box-item" style="width: 150px;"><p>2</p></div>
+            <div class="box-item"style="width: 100px;"><p>3</p></div>
+        </div>
+
+        <h3>1.5 align-items: flex-start | flex-end | center | baseline | stretch</h3>
+        <p>align-items属性定义项目在交叉轴上如何对齐。</p>
+        <div class="box box-4">
+            <div class="box-item" style="width: 200px;height: 40px;"><p>1个</p></div>
+            <div class="box-item" style="width: 150px;height: 120px;"><p>2</p></div>
+            <div class="box-item"style="width: 100px;height :80px"><p>3</p></div>
+        </div>
+
+        <h3>1.6 align-content: flex-start | flex-end | center | space-between | space-around | stretch</h3>
+        <p>align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</p>
+        <p>这个比较复杂也不太常用！改天再试</p>
+
+        <h2>2.项目（item）的属性</h2>
+        <h3>2.1 order: &lt;integer&gt;</h3>
+        <p>order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。</p>
+        <div class="box box-5">
+            <div class="box-item">1个</div>
+            <div class="box-item" style="order: -2;">2<div>(order是-2)</div></div>
+            <div class="box-item">3</div>
+            <div class="box-item order" style="order: -1;">4 <div>(order是-1)</div></div>
+        </div>
+
+        <h3>2.2 flex-grow: &lt;number&gt;</h3>
+        <p>flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。</p>
+        <div class="box box-6">
+            <div class="box-item"style="flex-grow:1;">1</div>
+            <div class="box-item" style="flex-grow:1;">1</div></div>
+            <div class="box-item"style="flex-grow:1;">1</div>
+        </div>
+        <p>如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。</p>
+        <div class="box box-6">
+            <div class="box-item"style="flex-grow:1;">1</div>
+            <div class="box-item" style="flex-grow:2;">2</div></div>
+            <div class="box-item"style="flex-grow:1;">1</div>
+            <!-- ??? -->
+        </div>
+
+        <h3>2.3 flex-shrink: &lt;number&gt;</h3>
+        <p>flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</p>
+
+        <p>如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。</p>
+        <p>负值对该属性无效。</p>
+
+        <h3>2.4 flex-basis: &lt;length&gt;</h3>
+        <p>flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。</p>
+        <p>它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。</p>
+
+        <h3>2.5 flex:&lt;flex-grow&gt; || &lt;flex-shrink&gt;|| &lt;flex-basis&gt;</h3>
+        <p>flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。</p>
+        <p>该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。</p>
+        <p>建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。</p>
+
+        <h3>2.6 align-self: auto | flex-start | flex-end | center | baseline | stretch</h3>
+        <p>align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。</p>
+        <p>该属性可能取6个值，除了auto，其他都与align-items属性完全一致。</p>
+    </body>
+</html>

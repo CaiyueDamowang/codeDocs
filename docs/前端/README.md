@@ -119,3 +119,37 @@
 |____project.config.json
 |____sitemap.json
 ```
+
+#### 6. 采用CSS3的flex布局
+- 详见flex.html
+##### 6.1 What
+
+- Flex 是"弹性布局"，用来为盒状模型提供最大的灵活性。任何一个容器都可以指定为 Flex 布局。
+- 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。
+
+```
+.box{
+  display: flex;
+}
+```
+注意，设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。
+
+##### 6.2 box的属性
+- 一共6个属性：
+  ·flex-direction
+  ·flex-wrap
+  ·flex-flow
+  ·justify-content
+  ·align-items
+  ·align-content
+
+##### 6.3 item的属性
+- 一共6个属性：
+  ·order
+  ·flex-grow
+  ·flex-shrink
+  ·flex-basis
+  ·flex
+  ·align-self
+
+
