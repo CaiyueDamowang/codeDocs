@@ -10,17 +10,11 @@
 
 - 包含navbar组件 ✅
 - 包含toolbar ✅
-  - 自定义动态组件样式
 - 包含页面视图组件 ✅
-  - 自定义组件会继承外部html结构的font color属性
-  - 组件样式文件有作用域，页面样式不能应用在组件样式内
-
 - 组件采用slot - name 形式插槽嵌套 ✅
   - 主要包含 modal(弹窗) views(页面组件) loading (加载组件)
-
 - 编写公共UI组件 ✅
-
-- 是否采用npm构建 ❌
+- 采用npm构建 ❌
 
 > 关于自定义组件，会有一些样式的坑 [具体查看](https://developers.weixin.qq.com/miniprogram/dev/framework/runtime/env.html)
 
@@ -69,10 +63,7 @@
 
 ###### - 全局状态管理 ❌ 
 
-待选方案
-1. mapStateToProps 和 mapActionToProps 的方案
-
-2. 组件管理
+[全局状态管理方案](./全局状态管理.md)
 
 ###### 3.3 微信小程序组件文档
 [Component构造API](https://developers.weixin.qq.com/miniprogram/dev/reference/api/Component.html)
