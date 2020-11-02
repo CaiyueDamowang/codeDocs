@@ -1,0 +1,30 @@
+22:25:42.466 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+22:25:42.815 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+22:25:42.907 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+22:25:42.910 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22:25:42.917 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+22:25:42.917 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+22:25:42.918 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+22:25:42.920 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+22:25:43.101 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+22:25:43.316 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:25:43.348 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+22:25:43.349 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+22:25:43.367 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+22:25:43.367 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+22:25:43.368 [localhost-startStop-1] INFO  app.controller.RestCtrl - LoginControl初始化成功
+22:25:43.670 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+22:25:43.670 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22:25:43.671 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+22:25:43.671 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+22:25:43.672 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+22:25:43.672 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+22:25:43.677 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+22:25:43.703 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:25:43.710 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+22:25:43.710 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+22:25:43.712 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+22:25:43.713 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+22:25:43.714 [localhost-startStop-1] INFO  app.controller.RestCtrl - LoginControl初始化成功
+22:29:16.976 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+22:29:16.982 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
