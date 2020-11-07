@@ -66,17 +66,13 @@ public class CommentServiceImp implements CommentService{
     }
 
     @Override
-    public boolean saveComment(Comment comment) throws Exception {
+    public void saveComment(Comment comment) {
         Integer applyId = comment.getParentId();
-        try {
-            if (applyId == null) { // 是对帖子的评论
-                commentDataService.saveUpdateComment(comment);
-            } else { // 是对帖子的回复
-                commentDataService.saveComment(comment);
+        if (applyId == null) { // 是对帖子的评论
+            commentDataService.saveUpdateComment(comment);
+        } else { // 是对帖子的回复
+            commentDataService.saveComment(comment);
             }
-        } catch (Exception exception){
-            throw  exception;
-        } return true;
     }
 
     @PostConstruct

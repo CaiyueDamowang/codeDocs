@@ -1,5 +1,6 @@
 package app.service.userservice;
 
+import app.pojo.OrdRes;
 import app.pojo.userservice.User;
 
 /**
@@ -20,21 +21,15 @@ public interface AbstractUserService {
      * 注册
      * @return User对象
      */
-    User register(User user);
+    OrdRes register(User user);
 
 
     /**
      * 用户登录
-     * @return User对象
+     * @return 提示信息
      */
-    User login(User loginForm);
+    OrdRes login(User loginForm);
 
-    /**
-     * 根据用户邮箱查找用户
-     * @param email 根据用户邮箱查找用户
-     * @return User对象
-     */
-    public User searchUserByEmail(String email);
 
 }
 

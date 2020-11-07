@@ -23,14 +23,14 @@ public class PostImage {
     String imgUrl;
 
     @Column(name = "post_id")
-    String postId;
+    Long postId;
 
     // baseStr base64位字符串
-    @Transient
+    @Column(name = "base_str")
     String baseStr;
 
     // 图片名
-    @Transient
+    @Column(name = "image_name")
     String fileName;
 
     public Integer getImg_id() {
@@ -41,7 +41,7 @@ public class PostImage {
         return imgUrl;
     }
 
-    public String getPostId() {
+    public Long getPostId() {
         return postId;
     }
 
@@ -61,7 +61,7 @@ public class PostImage {
         this.imgUrl = imgUrl;
     }
 
-    public void setPostId(String postId) {
+    public void setPostId(Long postId) {
         this.postId = postId;
     }
 

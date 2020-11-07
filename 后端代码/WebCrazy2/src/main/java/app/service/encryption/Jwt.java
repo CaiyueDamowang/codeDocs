@@ -59,7 +59,7 @@ public class Jwt {
      * @param mintues 时长 单位：minutes
      * @return
      */
-    private String getToken(int id, long mintues) {
+    private String getToken(long id, long mintues) {
         // 后面从配置文件读取
         String token = null;
         try {
@@ -80,7 +80,7 @@ public class Jwt {
      * @param id 用户id
      * @return
      */
-    public String  getToken(int id){
+    public String  getToken(Long id){
         return getToken(id, tokenExpiredMinutes);
     }
 
@@ -89,7 +89,7 @@ public class Jwt {
      * @param id
      * @return
      */
-    public String  getRefreshToken(int id){
+    public String  getRefreshToken(long id){
         return getToken(id, refreshTokenExpireMinutes);
     }
 

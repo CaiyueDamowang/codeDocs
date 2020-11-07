@@ -6,15 +6,16 @@ import app.pojo.post.PostImage;
 import app.pojo.post.PostInfo;
 import app.pojo.userservice.User;
 import app.service.postservice.CommentService;
+import app.service.postservice.PostService;
 import app.service.timeservice.CurTime;
-import jdk.net.SocketFlow;
+import app.service.userservice.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
-import java.io.IOException;
+import java.awt.*;
 import java.util.List;
 
 /**
@@ -40,6 +41,12 @@ public class RestCtrl {
     @Autowired
     CurTime timeService;
 
+    @Autowired
+    UserService userService;
+
+    @Autowired
+    PostService postService;
+
     @PostConstruct
     void init(){
         logger.info("LoginControl初始化成功");
@@ -47,13 +54,13 @@ public class RestCtrl {
 
     /**-----------------------------登录,注册----------------------------*/
     @RequestMapping(value = "/cumt/web/login", method = RequestMethod.POST, consumes = "application/json")
-    public String getLogin(@RequestBody User form) {
-        return null;
+    public OrdRes getLogin(User form) {
+        return userService.login(form);
     }
 
     @RequestMapping(value = "/cumt/web/register", method = RequestMethod.POST)
-    public String getRegister(User form) { // 加上@RequestBody就报错，我也是醉了
-        return null;
+    public OrdRes getRegister(User form) {
+        return userService.register(form);
     }
 
     /**--------------------------------帖子---------------------------------------*/
@@ -67,34 +74,46 @@ public class RestCtrl {
         return null;
     }
 
-    /**---------------------------图片上传------------------------------------------*/
-    @RequestMapping(value = "/web/crazy/image/bybase64", method = RequestMethod.POST)
-    public OrdRes upLoad(List<PostImage> imageData){
+    /**
+     * 获得帖子下图片的链接
+     * @param PostId
+     * @return
+     */
+    @RequestMapping(value = "/web/crazy/image/bybase64/{postId}", method = RequestMethod.POST)
+    public List<PostImage> getImgOfPost(Long PostId){
         return null;
     }
 
-    @RequestMapping(value = "/web/crazy/image/bybase64", method = RequestMethod.POST)
-    public OrdRes getImgOfPost(int PostId){
-        return null;
+    /**
+     * 获得图片, 实际上就是向客户输出二进制流
+     */
+    @RequestMapping(value = "/web/crazy/images/{imageId}")
+    public void getImage(@PathVariable Long imageID){
+        if(imageID == null) throw  new IllegalArgumentException("参数异常");
+        PostImage image = postService.getImage(imageID);
+        // 解析baseStr, 输出二进制流到客户端, base64的长度,mysql的类型选择
     }
 
     /**-----------------------------评论---------------------- -------------*/
+    /**
+     * 获得评论
+     * @param postId
+     * @return
+     */
     @RequestMapping(value = "/web/crazy/comment", method = RequestMethod.GET)
     public List<Comment> getComment(@RequestParam("postId") int postId){
-        //1. 定义拦截器，验证token
-        // /web/crazy/comment?post=1
         return commentService.getAllComment(postId);
     }
 
+    /**
+     * 上传评论
+     * @param comment
+     * @return
+     */
     @RequestMapping(value = "/web/crazy/comment", method = RequestMethod.POST)
     public OrdRes saveComment(Comment comment){
-        try {
-            comment.setCreateTime(timeService.getCurTime());
-            commentService.saveComment(comment);
-        } catch (Exception ex){
-            logger.error("/web/crazy/comment method = post, 请求异常,获得帖子失败,详细信息:", ex);
-            return  new OrdRes(1, "服务器内部错误");
-        }
+        comment.setCreateTime(timeService.getCurTime());
+        commentService.saveComment(comment);
         return new OrdRes(0, "保存成功");
     }
 }

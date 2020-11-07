@@ -1,7 +1,10 @@
 package app.service.postservice;
 
 
+import app.daos.CommentDao;
 import app.pojo.post.Comment;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -12,7 +15,6 @@ import java.util.List;
  * 失之毫厘，缪之千里！
  */
 public interface CommentService {
-
     /**
      * 获得所有的评论
      * @param postId
@@ -25,6 +27,6 @@ public interface CommentService {
      * @param comment
      * @return
      */
-    public boolean saveComment(Comment comment) throws Exception;
+    public void saveComment(Comment comment);
 
 }

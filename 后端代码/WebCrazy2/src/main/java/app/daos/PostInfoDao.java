@@ -1,7 +1,9 @@
 package app.daos;
 
 
+import app.pojo.post.PostImage;
 import app.pojo.post.PostInfo;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -11,6 +13,8 @@ import java.util.List;
  * @Version 1.0
  * 失之毫厘，缪之千里！
  */
+
+@Component
 public class PostInfoDao {
 
     /**
@@ -19,15 +23,58 @@ public class PostInfoDao {
      * @param count 查找count条帖子
      * @return
      */
-    public List<PostInfo>  getPostInfo(Integer start, Integer count){
+    public List<PostInfo>  getPostInfo(Long start, Long count){
         return  null;
     }
 
     /**
      * 保存帖子
      * @param post
+     * @return 帖子id
      */
-    public void savePost(PostInfo post){
+    public Long savePost(PostInfo post){
+        return 0L;
+    }
 
+    /**
+     * 根据postId获得图片
+     * @param postId
+     * @return
+     */
+    public List<PostImage> getPostImages(Long postId){
+        return null;
+    }
+
+    /**
+     * 保存帖子图片
+     */
+    public void saveImages(List<PostImage> images){
+
+    }
+
+    /**
+     * 保存帖子图片
+     * @return 图片id
+     */
+    public Long saveImage(PostImage image){
+        return 0L;
+    }
+
+    /**
+     * 更新图片
+     * @param image
+     * @return 更新的id
+     */
+    public Long update(PostImage image){
+        return 0L;
+    }
+
+    /**
+     * 根据ImageId获得图片
+     * @param imageId
+     * @return
+     */
+    public PostImage getImage(Long imageId){
+        return null;
     }
 }

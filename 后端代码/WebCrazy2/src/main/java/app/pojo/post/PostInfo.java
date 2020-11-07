@@ -17,22 +17,22 @@ import java.util.List;
 @Table(name = "post_tb")
 public class PostInfo {
     @Column(name = "post_id")
-    Integer postId;
+    Long postId;
 
     @Column(name = "title")
     String  title;
 
     @Column(name = "user_id")
-    Integer userId;
+    Long userId;
 
     @Column(name = "heat")
-    Integer heat;
+    Long heat;
 
     @Column(name = "thumbs") // 点赞数
-            Integer thumbs;
+    Long thumbs;
 
     @Column(name = "state")
-    Integer state;
+    Long state;
 
     @Column(name = "post_content")
     String Content;
@@ -40,7 +40,7 @@ public class PostInfo {
     @Transient
     List<PostImage> postImages ;
 
-    public Integer getPostId() {
+    public Long getPostId() {
         return postId;
     }
 
@@ -48,19 +48,19 @@ public class PostInfo {
         return title;
     }
 
-    public Integer getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public Integer getHeat() {
+    public Long getHeat() {
         return heat;
     }
 
-    public Integer getThumbs() {
+    public Long getThumbs() {
         return thumbs;
     }
 
-    public Integer getState() {
+    public Long getState() {
         return state;
     }
 
@@ -72,7 +72,7 @@ public class PostInfo {
         return postImages;
     }
 
-    public void setPostId(Integer postId) {
+    public void setPostId(Long postId) {
         this.postId = postId;
     }
 
@@ -80,19 +80,19 @@ public class PostInfo {
         this.title = title;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
-    public void setHeat(Integer heat) {
+    public void setHeat(Long heat) {
         this.heat = heat;
     }
 
-    public void setThumbs(Integer thumbs) {
+    public void setThumbs(Long thumbs) {
         this.thumbs = thumbs;
     }
 
-    public void setState(Integer state) {
+    public void setState(Long state) {
         this.state = state;
     }
 
