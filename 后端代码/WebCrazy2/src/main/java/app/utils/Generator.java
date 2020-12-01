@@ -11,5 +11,5 @@ public class Generator {
         return "游客" + email;
     }
 
-    public static String imageBaseUrl(Long imageId){ return "/web/crazy/images/" + imageId;}
+    public static String imageBaseUrl(Long imageId){ return "http:localhost:90/web/crazy/images/" + imageId;}
 }

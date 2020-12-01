@@ -40,7 +40,7 @@ public class CommentServiceImp implements CommentService{
     }
 
     // 扁平化数组树形化
-    Comment generatorTree(List<Comment> comments){
+     Comment generatorTree(List<Comment> comments){
         // 参数检查
         if(comments == null)return null;
 

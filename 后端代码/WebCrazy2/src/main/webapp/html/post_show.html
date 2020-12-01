@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>展示帖子页面</title>
+</head>
+
+<body>
+
+    <img src=" ">
+
+    <p>
+        这是标题
+    </p>
+    <p>
+        这是内容
+    </p>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script>
+        function send() {
+            $.post(
+                "http://localhost::8080/fizz/blog/alpha/ajax",
+                {"name":"张三","age":23},
+                function(data) {
+                    console.log(typeof(data));
+                    console.log(data);
+
+                    data = $.parseJSON(data);
+                    console.log(typeof(data));
+                    console.log(data.code);
+                    console.log(data.msg);
+                }
+            );
+        }
+    </script>
+
+</body>
+</html>

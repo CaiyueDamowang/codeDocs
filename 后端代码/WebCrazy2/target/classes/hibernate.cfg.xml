@@ -49,6 +49,7 @@
         <!--mapping class="app.comment.commentpojo.Comment"/-->
         <!--通过xml文件配置-->
         <!--mapping resource="User.hbm.xml"/-->
+        <mapping class="app.pojo.userservice.User"/>
 
     </session-factory>
 </hibernate-configuration>

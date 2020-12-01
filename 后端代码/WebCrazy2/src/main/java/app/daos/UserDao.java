@@ -42,4 +42,17 @@ public class UserDao {
         tx.commit();
         session.close();
     }
+
+    // 通过id查找用户
+    public User findUserById(Long  userId){
+        Session session = dataService.getSession();
+        Transaction tx = session.beginTransaction();
+        String hql = "from User where userId = :userId";
+        Query<User> query = session.createQuery(hql);
+        query.setParameter("userId", userId);
+        User res = query.uniqueResult();
+        tx.commit();
+        return res;
+    }
+
 }

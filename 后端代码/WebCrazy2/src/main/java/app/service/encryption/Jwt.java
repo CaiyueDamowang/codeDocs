@@ -7,11 +7,17 @@ import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
+import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
+import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,13 +29,18 @@ import org.slf4j.LoggerFactory;
  * 失之毫厘，缪之千里！
  */
 
+@PropertySource("classpath:application.properties")
 @Component
 public class Jwt {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
-    private long tokenExpiredMinutes = 30;// // token失效分钟数字30分钟
-    private long refreshTokenExpireMinutes = 60 * 24 * 60; // refreshToken失效天数60天
-    private final String secret = "secret"; // 密钥，后面生成Bean时从配置类读取
+
+    // @Value("${jwt.secretKey}")
+    private String secret = "hujie&_*(";
+
+    // @Value("${jwt.tokenExpried}") // 进行类型转换
+    private long tokenExpiredMinutes = 30 * 24 * 60;
+
     private final Algorithm algorithm = Algorithm.HMAC256(secret);
 
     @Autowired
@@ -41,12 +52,6 @@ public class Jwt {
 
     public long getTokenExpiredMinutes() {
         return tokenExpiredMinutes;
-    }
-
-    public void setRefreshTokenExpiredDays(long refreshTokenExpiredMinutes) { this.refreshTokenExpireMinutes = refreshTokenExpiredMinutes; }
-
-    public long getRefreshTokenExpireMinutes() {
-        return refreshTokenExpireMinutes;
     }
 
     public void setCurTime(CurTime curTime) {
@@ -85,20 +90,13 @@ public class Jwt {
     }
 
     /**
-     * 签发refreshtoken
-     * @param id
-     * @return
-     */
-    public String  getRefreshToken(long id){
-        return getToken(id, refreshTokenExpireMinutes);
-    }
-
-    /**
      * 验证token
      * @param token
      * @return
      */
     public boolean verify(String token){
+        if(token == null) return false;
+
         try {
             JWTVerifier verifier = JWT.require(algorithm).build();
             DecodedJWT jwt = verifier.verify(token);
@@ -108,10 +106,20 @@ public class Jwt {
         return true;
     }
 
+    public Long getId(String token) {
+        try {
+            DecodedJWT decode = JWT.decode(token);
+            Claim claim = decode.getClaim("id");
+            return claim.asLong();
+        } catch (Exception ex) {
+            logger.error(ex.getMessage());
+            return null;
+        }
+    }
+
     @PostConstruct
     void init(){
         logger.info("Jwt组件已经初始化成功");
     }
-
 }
 

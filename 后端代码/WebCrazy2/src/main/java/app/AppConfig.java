@@ -1,9 +1,13 @@
 package app;
 
-
+import app.supported.interceptor.GetIdInterceptor;
+import app.supported.interceptor.CheckIdentity;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+import org.springframework.web.servlet.config.annotation.*;
+
 
 /**
  * @Author Fizz Pu
@@ -14,6 +18,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 // java代码进行配置
 @Configuration
+@EnableWebMvc
 public class AppConfig {
 
     /**
@@ -33,6 +38,30 @@ public class AppConfig {
     @Bean(name = "multipartResolver")
     public CommonsMultipartResolver createMulitipartResolver(){
         return new CommonsMultipartResolver();
+    }
+
+    /**
+     * 使用java配置springmvc的监听器, 当然, 也可以使用配置文件进行配置
+     */
+
+    @Autowired
+    GetIdInterceptor getIdInterceptor;
+
+    @Autowired
+    CheckIdentity checkIdentity;
+
+    @Bean
+    public WebMvcConfigurer configWebMvc(){
+        return new WebMvcConfigurerAdapter(){
+            @Override
+            public void addInterceptors(InterceptorRegistry interceptorRegistry) {
+                interceptorRegistry.addInterceptor(getIdInterceptor).addPathPatterns("/**").
+                        excludePathPatterns("/cumt/web/login").excludePathPatterns("/cumt/web/register");
+
+                interceptorRegistry.addInterceptor(checkIdentity).addPathPatterns("/**").excludePathPatterns("/").
+                        excludePathPatterns("/cumt/web/login").excludePathPatterns("/cumt/web/register");
+            }
+        };
     }
 }
 

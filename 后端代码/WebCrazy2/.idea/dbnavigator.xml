@@ -23,7 +23,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc">
+        <schema name="cumt" object-types="table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc">
@@ -36,11 +40,23 @@
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc" />
   </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc" dataset="cumt.user_tb" active-filter-id="48a0eb02-6099-4367-90ca-d9b7f803be01">
+      <filter id="48a0eb02-6099-4367-90ca-d9b7f803be01" name="10" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="user_id" operator="&lt;" value="10" active="true" />
+      </filter>
+      <filter id="514ded3b-922f-4657-8335-a470dca4e96e" name="100" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="user_id" operator="=" value="100" active="true" />
+      </filter>
+    </filter-actions>
+  </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/SQL/user_tb.sql" connection-id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc" session-id="MAIN" current-schema="mysql" />
+    <mapping file-url="file://$PROJECT_DIR$/SQL/post_tb.sql" connection-id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc" session-id="MAIN" current-schema="cumt" />
+    <mapping file-url="file://$PROJECT_DIR$/SQL/user_tb.sql" connection-id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc" session-id="MAIN" current-schema="cumt" />
+    <mapping file-url="file://$PROJECT_DIR$/SQL/post_image_tb.sql" connection-id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc" session-id="MAIN" current-schema="cumt" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -280,7 +296,6 @@
           <content-type name="JSON" enabled="true" />
           <content-type name="JSON5" enabled="true" />
           <content-type name="Groovy" enabled="true" />
-          <content-type name="AIDL" enabled="true" />
           <content-type name="YAML" enabled="true" />
           <content-type name="Manifest" enabled="true" />
         </content-types>

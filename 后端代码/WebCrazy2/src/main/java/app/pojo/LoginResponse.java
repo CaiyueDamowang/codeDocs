@@ -9,21 +9,11 @@ package app.pojo;
 public class LoginResponse extends OrdRes {
     private String token;
     private String refreshToken;
-    private Long userId;
 
-    public LoginResponse(Integer responseCode, String msg, String token, String refreshToken, Long userId) {
+    public LoginResponse(Integer responseCode, String msg, String token, String refreshToken) {
         super(responseCode, msg);
         this.token = token;
         this.refreshToken = refreshToken;
-        this.userId = userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
-    public Long getUserId() {
-        return userId;
     }
 
     public String getToken() {

@@ -33,6 +33,18 @@ public class PostImage {
     @Column(name = "image_name")
     String fileName;
 
+    // 图片是否被删除 1: 已经被删除
+    @Column(name = "state")
+    String state;
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
     public Integer getImg_id() {
         return img_id;
     }

@@ -1,9 +1,6 @@
 package app.pojo.userservice;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
 /**
  * @Author Fizz Pu
@@ -14,28 +11,29 @@ import javax.persistence.Transient;
 
 
 @Entity
-@Table(catalog = "user_tb")
+@Table(name = "user_tb")
 public class User {
-
-    @Column(columnDefinition = "user_id")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_id")
     private Long userId;
 
-    @Column(columnDefinition = "user_name")
+    @Column(name = "user_name")
     private String userName;
 
-    @Column(columnDefinition = "password")
+    @Column(name = "password")
     private String passWord;
 
-    @Column(columnDefinition = "email")
+    @Column(name = "email")
     private String email;
 
-    @Column(columnDefinition = "is_superuser")
+    @Column(name = "is_superuser")
     private Integer isSuperUser;
 
-    @Column(columnDefinition = "sex")
+    @Column(name = "sex")
     private String sex;
 
-    @Column(columnDefinition = "photo_url")
+    @Column(name = "photo_url")
     private String photoUrl;
 
     @Transient

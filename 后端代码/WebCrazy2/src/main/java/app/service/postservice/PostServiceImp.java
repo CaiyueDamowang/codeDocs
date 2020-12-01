@@ -4,9 +4,14 @@ import app.daos.CommentDao;
 import app.daos.PostInfoDao;
 import app.pojo.post.PostImage;
 import app.pojo.post.PostInfo;
+import app.supported.Holder;
 import app.utils.Generator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author Fizz Pu
@@ -15,10 +20,14 @@ import java.util.List;
  * 失之毫厘，缪之千里！
  */
 
+@Component
 public class PostServiceImp implements PostService {
 
     @Autowired
     PostInfoDao postInfoDao;
+
+    @Autowired
+    Holder holder;
 
     @Override
     public List<PostInfo> getPostInfo(Long start, Long count) {
@@ -36,9 +45,18 @@ public class PostServiceImp implements PostService {
     }
 
     @Override
-    public void upLoadPost(PostInfo postInfo) {
+    public Map<String, String> upLoadPost(PostInfo postInfo) {
+
+        Map<String, String> map = new HashMap<>();
+
         if(postInfo == null)throw new IllegalArgumentException("postInfo为null");
+        if(postInfo.getTitle() == null){
+            map.put("msg", "上传失败,title不能为空");
+            return map;
+        }
+
         // 1. 保存帖子
+        postInfo.setUserId(holder.getUser());
         Long postId = postInfoDao.savePost(postInfo);
         // 2. 保存图片
         List<PostImage> postImages = postInfo.getPostImages();
@@ -52,6 +70,9 @@ public class PostServiceImp implements PostService {
                 postInfoDao.update(image);
             }
         }
+
+        map.put("msg","上传成功");
+        return map;
     }
 
     @Override

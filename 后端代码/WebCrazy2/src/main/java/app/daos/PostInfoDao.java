@@ -3,6 +3,12 @@ package app.daos;
 
 import app.pojo.post.PostImage;
 import app.pojo.post.PostInfo;
+import app.pojo.userservice.User;
+import app.service.dataService.DataService;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -16,6 +22,9 @@ import java.util.List;
 
 @Component
 public class PostInfoDao {
+
+    @Autowired
+    DataService dataService;
 
     /**
      * 分页查询帖子
@@ -42,7 +51,14 @@ public class PostInfoDao {
      * @return
      */
     public List<PostImage> getPostImages(Long postId){
-        return null;
+        Session session = dataService.getSession();
+        Transaction tx = session.beginTransaction();
+        String hql = "from PostImage where postId = :postId";
+        Query<PostImage> query = session.createQuery(hql);
+        query.setParameter("postId", postId);
+        List<PostImage> res = query.list();
+        tx.commit();
+        return res;
     }
 
     /**

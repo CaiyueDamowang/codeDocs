@@ -12,7 +12,7 @@
 22:25:43.349 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
 22:25:43.367 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
 22:25:43.367 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
-22:25:43.368 [localhost-startStop-1] INFO  app.controller.RestCtrl - LoginControl初始化成功
+22:25:43.368 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
 22:25:43.670 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
 22:25:43.670 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
 22:25:43.671 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
@@ -25,7 +25,7 @@
 22:25:43.710 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
 22:25:43.712 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
 22:25:43.713 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
-22:25:43.714 [localhost-startStop-1] INFO  app.controller.RestCtrl - LoginControl初始化成功
+22:25:43.714 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
 22:29:16.976 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
 22:29:16.982 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
 20:34:28.684 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -41,7 +41,7 @@
 20:34:30.426 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:34:30.427 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:34:30.433 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:34:30.433 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:34:30.433 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:34:30.439 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:34:30.441 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 20:37:21.308 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -57,7 +57,7 @@
 20:37:22.201 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:37:22.201 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:37:22.207 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:37:22.207 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:37:22.207 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:37:22.212 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:37:22.214 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 20:39:39.883 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -73,7 +73,7 @@
 20:39:40.797 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:39:40.798 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:39:40.805 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:39:40.805 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:39:40.805 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:39:40.813 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:39:40.815 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 20:41:08.327 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -89,7 +89,7 @@
 20:41:09.200 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:41:09.201 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:41:09.208 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:41:09.208 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:41:09.208 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:41:09.213 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:41:09.215 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 20:42:20.155 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -105,7 +105,7 @@
 20:42:21.040 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:42:21.041 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:42:21.046 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:42:21.047 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:42:21.047 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:42:21.052 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:42:21.054 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 20:42:57.286 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -121,7 +121,7 @@
 20:42:58.229 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:42:58.229 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:42:58.236 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:42:58.237 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:42:58.237 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:42:58.243 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:42:58.245 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 20:43:18.002 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -137,7 +137,7 @@
 20:43:18.906 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:43:18.907 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:43:18.914 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:43:18.915 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:43:18.915 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:43:18.922 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:43:18.925 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 20:44:02.664 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -153,7 +153,7 @@
 20:44:03.574 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:44:03.575 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:44:03.583 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:44:03.584 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:44:03.584 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:44:03.591 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:44:03.595 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 20:44:37.576 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -169,7 +169,7 @@
 20:44:38.457 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:44:38.458 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:44:38.464 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:44:38.465 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:44:38.465 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:44:38.470 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:44:38.472 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 20:46:38.138 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -185,7 +185,7 @@
 20:46:39.023 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:46:39.023 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:46:39.030 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:46:39.030 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:46:39.030 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:46:39.038 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:46:39.040 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 20:47:41.317 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -201,7 +201,7 @@
 20:47:42.221 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:47:42.221 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:47:42.229 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:47:42.230 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:47:42.230 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:47:42.237 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:47:42.239 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 20:48:01.064 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -217,7 +217,7 @@
 20:48:02.013 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 20:48:02.014 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 20:48:02.022 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-20:48:02.022 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+20:48:02.022 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 20:48:02.031 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 20:48:02.035 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 21:10:53.008 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -233,7 +233,7 @@
 21:10:53.886 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 21:10:53.886 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 21:10:53.892 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-21:10:53.893 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+21:10:53.893 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 21:10:53.898 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 21:10:53.900 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
 21:12:18.694 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
@@ -249,6 +249,1030 @@
 21:12:19.612 [main] INFO  app.service.dataService.DataService - 数据源database初始化成功
 21:12:19.614 [main] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
 21:12:19.622 [main] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
-21:12:19.622 [main] INFO  app.controller.RestCtrl - LoginControl初始化成功
+21:12:19.622 [main] INFO  app.controller.UserCtrl - LoginControl初始化成功
 21:12:19.629 [main] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
 21:12:19.632 [main] INFO  app.service.userservice.UserService - userService组件初始化成功
+17:28:00.182 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+17:28:00.614 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+17:28:00.724 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+17:28:00.726 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+17:28:00.746 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+17:28:00.747 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+17:28:00.748 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+17:28:00.757 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+17:28:01.108 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+17:28:01.367 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:28:01.395 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+17:28:01.396 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+17:28:01.398 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+17:28:01.408 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+17:28:01.408 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+17:28:01.412 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+17:28:01.414 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:01:26.546 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:01:26.965 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:01:27.102 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:01:27.104 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:01:27.122 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:01:27.122 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:01:27.122 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:01:27.125 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:01:27.416 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:01:27.629 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:01:27.735 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:01:27.736 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:01:27.738 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:01:27.751 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:01:27.751 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:01:27.754 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:01:27.755 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:03:51.596 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:03:51.874 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:03:51.952 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:03:51.956 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:03:51.961 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:03:51.962 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:03:51.962 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:03:51.966 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:03:52.216 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:03:52.436 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:03:52.471 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:03:52.471 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:03:52.474 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:03:52.489 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:03:52.490 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:03:52.499 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:03:52.793 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:03:52.793 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:03:52.793 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:03:52.794 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:03:52.794 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:03:52.795 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:03:52.799 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:03:52.818 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:03:52.823 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:03:52.824 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:03:52.825 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:03:52.830 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:03:52.830 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:03:52.833 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:05:50.289 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:05:50.291 [localhost-startStop-2] ERROR o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Connection leak detected: there are 1 unclosed connections upon shutting down pool jdbc:mysql://localhost:3306/cumt?useSSL=false
+18:05:50.322 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:07:19.881 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:07:20.186 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:07:20.267 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:07:20.270 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:07:20.275 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:07:20.276 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:07:20.276 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:07:20.283 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:07:20.500 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:07:20.758 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:07:20.795 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:07:20.796 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:07:20.801 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:07:20.816 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:07:20.817 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:07:20.824 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:07:21.063 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:07:21.064 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:07:21.064 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:07:21.064 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:07:21.065 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:07:21.065 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:07:21.069 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:07:21.085 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:07:21.092 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:07:21.094 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:07:21.095 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:07:21.098 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:07:21.099 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:07:21.102 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:08:54.980 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:08:54.983 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:09:12.056 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:09:12.365 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:09:12.458 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:09:12.461 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:09:12.466 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:09:12.467 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:09:12.467 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:09:12.470 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:09:12.692 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:09:12.910 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:09:12.965 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:09:12.965 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:09:12.976 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:09:12.999 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:09:13.000 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:09:13.010 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:09:13.267 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:09:13.268 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:09:13.269 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:09:13.270 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:09:13.270 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:09:13.270 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:09:13.276 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:09:13.297 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:09:13.301 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:09:13.302 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:09:13.303 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:09:13.307 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:09:13.307 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:09:13.311 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:10:17.031 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:10:17.036 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:10:26.097 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:10:26.389 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:10:26.496 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:10:26.499 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:10:26.510 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:10:26.510 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:10:26.511 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:10:26.515 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:10:26.748 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:10:26.949 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:10:26.975 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:10:26.976 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:10:26.979 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:10:26.992 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:10:26.993 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:10:27.000 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:10:27.685 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:10:27.686 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:10:27.686 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:10:27.686 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:10:27.687 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:10:27.687 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:10:27.692 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:10:27.713 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:10:27.716 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:10:27.717 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:10:27.719 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:10:27.724 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:10:27.725 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:10:27.728 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:12:29.982 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:12:29.985 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:12:38.402 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:12:38.699 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:12:38.778 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:12:38.780 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:12:38.785 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:12:38.785 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:12:38.786 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:12:38.788 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:12:38.970 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:12:39.140 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:12:39.165 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:12:39.165 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:12:39.169 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:12:39.183 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:12:39.184 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:12:39.192 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:12:39.938 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:12:39.939 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:12:39.939 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:12:39.939 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:12:39.940 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:12:39.940 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:12:39.951 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:12:39.978 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:12:39.983 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:12:39.984 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:12:39.985 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:12:39.991 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:12:39.991 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:12:39.995 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:13:41.905 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:13:41.908 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:20:13.413 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:20:13.754 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:20:13.844 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:20:13.847 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:20:13.852 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:20:13.852 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:20:13.852 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:20:13.854 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:20:14.027 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:20:14.226 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:20:14.259 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:20:14.259 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:20:14.262 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:20:14.276 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:20:14.277 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:20:14.283 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:20:14.920 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:20:14.921 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:20:14.922 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:20:14.923 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:20:14.923 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:20:14.923 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:20:14.930 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:20:14.966 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:20:14.974 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:20:14.976 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:20:14.978 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:20:14.984 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:20:14.985 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:20:14.992 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:23:52.670 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:23:52.674 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:24:07.959 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:24:08.266 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:24:08.397 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:24:08.399 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:24:08.405 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:24:08.406 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:24:08.406 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:24:08.409 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:24:08.616 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:24:08.842 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:24:08.874 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:24:08.875 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:24:08.878 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:24:08.900 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:24:08.901 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:24:08.912 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:24:09.657 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:24:09.659 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:24:09.660 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:24:09.660 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:24:09.661 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:24:09.662 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:24:09.674 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:24:09.706 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:24:09.712 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:24:09.713 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:24:09.715 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:24:09.719 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:24:09.720 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:24:09.722 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:24:58.245 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:24:58.248 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:25:06.907 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:25:07.166 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:25:07.255 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:25:07.257 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:25:07.263 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:25:07.264 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:25:07.264 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:25:07.268 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:25:07.449 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:25:07.671 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:25:07.706 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:25:07.707 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:25:07.711 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:25:07.723 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:25:07.724 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:25:07.731 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:25:08.378 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:25:08.378 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:25:08.379 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:25:08.379 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:25:08.379 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:25:08.380 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:25:08.384 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:25:08.407 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:25:08.411 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:25:08.411 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:25:08.414 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:25:08.419 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:25:08.419 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:25:08.421 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:30:07.108 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:30:07.111 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:30:16.358 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:30:16.626 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:30:16.734 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:30:16.738 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:30:16.745 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:30:16.746 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:30:16.747 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:30:16.752 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:30:16.940 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:30:17.120 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:30:17.155 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:30:17.157 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:30:17.160 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:30:17.175 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:30:17.175 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:30:17.182 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:30:17.870 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:30:17.870 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:30:17.870 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:30:17.871 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:30:17.871 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:30:17.871 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:30:17.876 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:30:17.894 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:30:17.903 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:30:17.904 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:30:17.905 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:30:17.910 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:30:17.911 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:30:17.915 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:31:44.281 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:31:44.284 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:31:52.521 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:31:52.822 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:31:52.898 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:31:52.901 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:31:52.905 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:31:52.906 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:31:52.906 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:31:52.908 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:31:53.082 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:31:53.287 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:31:53.312 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:31:53.313 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:31:53.316 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:31:53.333 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:31:53.333 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:31:53.343 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:31:53.958 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:31:53.958 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:31:53.958 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:31:53.959 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:31:53.959 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:31:53.959 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:31:53.964 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:31:53.982 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:31:53.986 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:31:53.987 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:31:53.988 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:31:53.994 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:31:53.994 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:31:53.996 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:36:17.260 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:36:17.264 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:36:28.990 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:36:29.302 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:36:29.413 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:36:29.416 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:36:29.421 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:36:29.422 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:36:29.422 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:36:29.425 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:36:29.698 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:36:29.920 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:36:29.950 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:36:29.951 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:36:29.954 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:36:29.967 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:36:29.967 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:36:29.977 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:36:30.685 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:36:30.685 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:36:30.685 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:36:30.686 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:36:30.686 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:36:30.686 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:36:30.691 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:36:30.732 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:36:30.757 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:36:30.757 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:36:30.759 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:36:30.763 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:36:30.764 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:36:30.768 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:40:31.264 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:40:31.267 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:40:42.079 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:40:42.382 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:40:42.484 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:40:42.489 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:40:42.495 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:40:42.495 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:40:42.495 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:40:42.500 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:40:42.702 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:40:42.929 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:40:42.957 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:40:42.957 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:40:42.961 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:40:42.977 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:40:42.978 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:40:42.985 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:40:43.680 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:40:43.680 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:40:43.681 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:40:43.682 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:40:43.682 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:40:43.683 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:40:43.691 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:40:43.721 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:40:43.727 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:40:43.727 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:40:43.729 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:40:43.735 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:40:43.736 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:40:43.741 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:41:27.995 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:41:28.000 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:45:46.462 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:45:46.745 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:45:46.829 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:45:46.831 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:45:46.836 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:45:46.837 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:45:46.837 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:45:46.841 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:45:47.041 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:45:47.258 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:45:47.285 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:45:47.285 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:45:47.288 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:45:47.300 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:45:47.302 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:45:47.308 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:45:47.945 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:45:47.946 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:45:47.946 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:45:47.946 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:45:47.946 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:45:47.947 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:45:47.951 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:45:47.963 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:45:47.967 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:45:47.968 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:45:47.970 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:45:47.977 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:45:47.977 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:45:47.980 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:49:39.261 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:49:39.264 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:49:52.307 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:49:52.683 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:49:52.799 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:49:52.803 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:49:52.810 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:49:52.810 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:49:52.811 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:49:52.830 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:49:53.091 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:49:53.368 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:49:53.403 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:49:53.404 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:49:53.410 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:49:53.424 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:49:53.425 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:49:53.432 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:49:54.327 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:49:54.327 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:49:54.328 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:49:54.328 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:49:54.328 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:49:54.329 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:49:54.335 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:49:54.370 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:49:54.377 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:49:54.377 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:49:54.379 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:49:54.386 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:49:54.387 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:49:54.392 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:58:49.229 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:58:49.232 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:58:58.949 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:58:59.242 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:58:59.355 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:58:59.360 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:58:59.370 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:58:59.371 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:58:59.372 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:58:59.376 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:58:59.611 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:58:59.825 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:58:59.849 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:58:59.850 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:58:59.853 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:58:59.863 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:58:59.863 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:58:59.870 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:59:00.595 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:59:00.595 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:59:00.596 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:59:00.596 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:59:00.596 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:59:00.597 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:59:00.602 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:59:00.623 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:59:00.630 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:59:00.631 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:59:00.633 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:59:00.638 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:59:00.639 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:59:00.644 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:59:42.882 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:59:42.885 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+18:59:56.240 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+18:59:56.633 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:59:56.761 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:59:56.765 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:59:56.772 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:59:56.772 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:59:56.773 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:59:56.776 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:59:56.997 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:59:57.292 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:59:57.332 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:59:57.332 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:59:57.335 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:59:57.351 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:59:57.352 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:59:57.364 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+18:59:58.238 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:59:58.239 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:59:58.239 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+18:59:58.239 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+18:59:58.240 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+18:59:58.240 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:59:58.248 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+18:59:58.269 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:59:58.276 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+18:59:58.276 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+18:59:58.278 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+18:59:58.284 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+18:59:58.285 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+18:59:58.287 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+19:22:56.462 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+19:22:56.464 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+19:27:08.909 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+19:27:09.285 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+19:27:09.401 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+19:27:09.404 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+19:27:09.414 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+19:27:09.414 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+19:27:09.415 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+19:27:09.423 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+19:27:09.625 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+19:27:09.805 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:27:09.845 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+19:27:09.845 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+19:27:09.848 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+19:27:09.866 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+19:27:09.866 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+19:27:09.876 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+19:27:10.571 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+19:27:10.571 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+19:27:10.572 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+19:27:10.572 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+19:27:10.572 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+19:27:10.573 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+19:27:10.580 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+19:27:10.611 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:27:10.617 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+19:27:10.617 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+19:27:10.619 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+19:27:10.624 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+19:27:10.625 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+19:27:10.628 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+19:34:56.423 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+19:34:56.429 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+19:35:04.314 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+19:35:04.653 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+19:35:04.745 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+19:35:04.749 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+19:35:04.755 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+19:35:04.755 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+19:35:04.755 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+19:35:04.759 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+19:35:04.986 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+19:35:05.229 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:35:05.260 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+19:35:05.261 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+19:35:05.264 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+19:35:05.281 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+19:35:05.281 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+19:35:05.289 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+19:35:06.024 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+19:35:06.024 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+19:35:06.025 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+19:35:06.025 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+19:35:06.026 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+19:35:06.026 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+19:35:06.035 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+19:35:06.057 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:35:06.063 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+19:35:06.064 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+19:35:06.065 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+19:35:06.070 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+19:35:06.071 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+19:35:06.074 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+19:41:19.997 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+19:41:20.060 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+19:41:38.903 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+19:41:39.350 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+19:41:39.491 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+19:41:39.493 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+19:41:39.498 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+19:41:39.499 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+19:41:39.499 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+19:41:39.502 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+19:41:39.824 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+19:41:40.056 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:41:40.095 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+19:41:40.096 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+19:41:40.099 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+19:41:40.124 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+19:41:40.125 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+19:41:40.137 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+20:24:49.626 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+20:24:49.806 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+20:26:15.093 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+20:26:15.471 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20:26:15.615 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+20:26:15.618 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+20:26:15.623 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+20:26:15.624 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+20:26:15.624 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+20:26:15.627 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+20:26:16.591 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+20:26:16.820 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20:26:16.856 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+20:26:16.857 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+20:26:16.861 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+20:26:16.875 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+20:26:16.875 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+20:26:16.882 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+20:33:01.892 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+20:33:01.911 [localhost-startStop-2] ERROR o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Connection leak detected: there are 1 unclosed connections upon shutting down pool jdbc:mysql://localhost:3306/cumt?useSSL=false
+20:33:01.920 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+20:33:21.067 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+20:33:21.405 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20:33:21.528 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+20:33:21.531 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+20:33:21.536 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+20:33:21.537 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+20:33:21.537 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+20:33:21.540 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+20:33:21.860 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+20:35:50.242 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+20:35:50.526 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20:35:50.652 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+20:35:50.655 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+20:35:50.660 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+20:35:50.661 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+20:35:50.661 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+20:35:50.664 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+20:35:50.906 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+20:45:01.744 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+20:45:02.144 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20:45:02.267 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+20:45:02.271 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+20:45:02.277 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+20:45:02.277 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+20:45:02.278 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+20:45:02.281 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+20:45:02.573 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+20:47:02.477 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+20:47:02.953 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20:47:03.094 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+20:47:03.100 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+20:47:03.118 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+20:47:03.124 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+20:47:03.127 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+20:47:03.137 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+20:47:03.485 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+20:51:41.609 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+20:51:42.220 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+20:51:42.463 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+20:51:42.470 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+20:51:42.481 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+20:51:42.483 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+20:51:42.484 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+20:51:42.489 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+20:51:42.941 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+20:51:44.146 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20:51:44.198 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+20:51:44.199 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+20:51:44.204 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+20:51:44.233 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+20:51:44.234 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+20:51:44.251 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+21:01:19.513 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+21:01:19.572 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+21:01:46.709 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+21:01:48.087 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+21:01:48.892 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+21:01:48.897 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+21:01:48.913 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+21:01:48.915 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+21:01:48.916 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+21:01:48.921 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+21:01:49.918 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+21:01:51.355 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+21:01:51.403 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+21:01:51.404 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+21:01:51.411 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+21:01:51.436 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+21:01:51.437 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+21:01:51.445 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+21:07:00.236 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+21:07:00.249 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+21:07:18.845 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+21:07:19.409 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+21:07:19.560 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+21:07:19.568 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+21:07:19.581 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+21:07:19.584 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+21:07:19.585 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+21:07:19.592 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+21:07:20.087 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+21:07:21.168 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+21:07:21.223 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+21:07:21.223 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+21:07:21.230 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+21:07:21.253 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+21:07:21.253 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+21:07:21.266 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+21:08:54.973 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+21:08:55.013 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+21:09:35.023 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+21:09:35.992 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+21:09:36.328 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+21:09:36.343 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+21:09:36.354 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+21:09:36.355 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+21:09:36.357 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+21:09:36.364 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+21:09:36.923 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+21:09:37.956 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+21:09:38.016 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+21:09:38.017 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+21:09:38.020 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+21:09:38.045 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+21:09:38.045 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+21:09:38.054 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+21:10:54.961 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+21:10:54.964 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+21:11:17.483 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+21:11:18.260 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+21:11:18.511 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+21:11:18.517 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+21:11:18.527 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+21:11:18.527 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+21:11:18.528 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+21:11:18.532 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+21:11:18.924 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+21:11:20.145 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+21:11:20.218 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+21:11:20.220 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+21:11:20.228 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+21:11:20.256 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+21:11:20.258 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+21:11:20.271 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+21:17:52.467 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+21:17:52.469 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+22:56:24.901 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+22:56:25.324 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+22:56:25.442 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+22:56:25.444 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22:56:25.449 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+22:56:25.450 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+22:56:25.451 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+22:56:25.454 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+22:56:25.734 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+22:56:26.295 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:56:26.321 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+22:56:26.322 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+22:56:26.326 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+22:56:26.336 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+22:56:26.337 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+22:56:26.341 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+23:07:01.826 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:07:01.829 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+23:07:10.863 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+23:07:11.325 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+23:07:11.439 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+23:07:11.444 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+23:07:11.452 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:07:11.452 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+23:07:11.453 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+23:07:11.457 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+23:07:11.706 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+23:07:12.255 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:07:12.279 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+23:07:12.280 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+23:07:12.286 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+23:07:12.299 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+23:07:12.300 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+23:07:12.309 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+23:11:29.433 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:11:29.436 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+23:11:38.972 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+23:11:39.331 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+23:11:39.455 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+23:11:39.459 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+23:11:39.466 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:11:39.467 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+23:11:39.467 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+23:11:39.471 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+23:11:39.695 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+23:11:40.202 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:11:40.228 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+23:11:40.228 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+23:11:40.231 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+23:11:40.241 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+23:11:40.242 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+23:11:40.248 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+23:17:40.623 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:17:40.634 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+23:17:49.588 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+23:17:49.907 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+23:17:49.995 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+23:17:49.998 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+23:17:50.003 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:17:50.003 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+23:17:50.003 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+23:17:50.006 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+23:17:50.207 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+23:17:50.803 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:17:50.833 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+23:17:50.834 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+23:17:50.838 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+23:17:50.851 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+23:17:50.851 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+23:17:50.858 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+23:19:41.543 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:19:41.546 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+23:19:51.470 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+23:19:51.936 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+23:19:52.040 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+23:19:52.044 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+23:19:52.050 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:19:52.051 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+23:19:52.051 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+23:19:52.054 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+23:19:52.255 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+23:19:52.750 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:19:52.779 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+23:19:52.779 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+23:19:52.782 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+23:19:52.794 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+23:19:52.795 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+23:19:52.804 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+23:21:18.335 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:21:18.344 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+23:21:26.376 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+23:21:26.643 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+23:21:26.725 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+23:21:26.727 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+23:21:26.733 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:21:26.734 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+23:21:26.734 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+23:21:26.736 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+23:21:26.901 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+23:21:27.362 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:21:27.398 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+23:21:27.399 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+23:21:27.401 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+23:21:27.410 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+23:21:27.411 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+23:21:27.416 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+23:24:38.543 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:24:38.548 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+23:24:47.355 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+23:24:47.359 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+23:24:47.462 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+23:24:47.777 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+23:24:47.864 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+23:24:47.867 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+23:24:47.872 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:24:47.873 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+23:24:47.873 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+23:24:47.876 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+23:24:48.084 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+23:24:48.638 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:24:48.663 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+23:24:48.675 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+23:24:48.680 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+23:24:48.685 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+23:27:19.630 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:27:19.638 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+23:27:28.235 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+23:27:28.241 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+23:27:28.385 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+23:27:28.709 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+23:27:28.790 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+23:27:28.793 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+23:27:28.799 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:27:28.800 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+23:27:28.800 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+23:27:28.804 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+23:27:28.990 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+23:27:29.517 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:27:29.564 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+23:27:29.603 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+23:27:29.609 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+23:27:29.620 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+23:35:15.879 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:35:15.883 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+23:35:23.993 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+23:35:23.997 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+23:35:24.092 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+23:35:24.369 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+23:35:24.453 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+23:35:24.456 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+23:35:24.462 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:35:24.462 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+23:35:24.463 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+23:35:24.465 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+23:35:24.634 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+23:35:25.104 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:35:25.128 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+23:35:25.139 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+23:35:25.145 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+23:35:25.151 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+23:35:25.270 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:35:25.273 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database已完成清理
+23:38:15.478 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+23:38:15.481 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+23:38:15.568 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+23:38:15.828 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+23:38:15.906 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+23:38:15.908 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+23:38:15.913 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+23:38:15.913 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+23:38:15.913 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+23:38:15.916 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+23:38:16.079 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+23:38:16.556 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:38:16.583 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+23:38:16.602 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+23:38:16.606 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+23:38:16.613 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+15:59:16.929 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+15:59:17.040 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+16:40:08.100 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+16:40:08.107 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+16:40:08.431 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+16:40:08.872 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+16:40:09.006 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+16:40:09.009 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+16:40:09.015 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+16:40:09.015 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+16:40:09.016 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+16:40:09.019 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+16:40:09.282 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+16:40:09.833 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:40:09.860 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+16:40:09.876 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+16:40:09.883 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+16:40:09.891 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+16:45:43.978 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+16:45:43.982 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+16:48:41.212 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+16:48:41.217 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+16:48:41.355 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+16:48:41.684 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+16:48:41.776 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+16:48:41.778 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+16:48:41.784 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+16:48:41.784 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+16:48:41.784 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+16:48:41.787 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+16:48:41.962 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+16:48:42.447 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:48:42.468 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+16:48:42.491 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+16:48:42.495 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+16:48:42.518 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+16:54:11.524 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+16:54:11.532 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+16:54:20.101 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+16:54:20.104 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+16:54:20.243 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+16:54:20.537 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+16:54:20.629 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+16:54:20.632 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+16:54:20.639 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+16:54:20.641 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+16:54:20.642 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+16:54:20.647 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+16:54:20.841 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+16:54:21.398 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:54:21.428 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+16:54:21.441 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+16:54:21.447 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+16:54:21.456 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功
+16:56:05.234 [localhost-startStop-2] INFO  o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+16:56:05.237 [localhost-startStop-2] INFO  app.service.dataService.DataService - 数据源database已完成清理
+16:56:51.929 [localhost-startStop-1] INFO  app.service.timeservice.CurTime - 时间组件CurTime初始化成功
+16:56:51.933 [localhost-startStop-1] INFO  app.service.encryption.Jwt - Jwt组件已经初始化成功
+16:56:52.051 [localhost-startStop-1] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+16:56:52.395 [localhost-startStop-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+16:56:52.498 [localhost-startStop-1] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+16:56:52.503 [localhost-startStop-1] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+16:56:52.509 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/cumt?useSSL=false]
+16:56:52.511 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+16:56:52.511 [localhost-startStop-1] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+16:56:52.515 [localhost-startStop-1] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+16:56:52.737 [localhost-startStop-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+16:56:53.292 [localhost-startStop-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:56:53.324 [localhost-startStop-1] INFO  app.service.dataService.DataService - 数据源database初始化成功
+16:56:53.345 [localhost-startStop-1] INFO  a.s.postservice.CommentServiceImp - CommentService组件初始化成功
+16:56:53.352 [localhost-startStop-1] INFO  app.service.userservice.UserService - userService组件初始化成功
+16:56:53.362 [localhost-startStop-1] INFO  app.controller.UserCtrl - LoginControl初始化成功

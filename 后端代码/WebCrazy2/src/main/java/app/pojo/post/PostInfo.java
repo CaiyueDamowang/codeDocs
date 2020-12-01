@@ -1,9 +1,6 @@
 package app.pojo.post;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -16,6 +13,8 @@ import java.util.List;
 @Entity
 @Table(name = "post_tb")
 public class PostInfo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "post_id")
     Long postId;
 

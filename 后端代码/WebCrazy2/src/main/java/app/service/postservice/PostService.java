@@ -6,6 +6,7 @@ import app.pojo.post.PostInfo;
 
 import java.awt.*;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author Fizz Pu
@@ -36,7 +37,7 @@ public interface PostService {
      * @param postInfo
      * @return
      */
-    void upLoadPost(PostInfo postInfo);
+    Map<String, String> upLoadPost(PostInfo postInfo);
 
     /**
      * 根据图片id,获得图片
