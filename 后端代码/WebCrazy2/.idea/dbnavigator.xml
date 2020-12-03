@@ -23,11 +23,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc">
-        <schema name="cumt" object-types="table, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc">

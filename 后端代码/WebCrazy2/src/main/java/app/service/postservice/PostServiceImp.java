@@ -4,6 +4,7 @@ import app.daos.CommentDao;
 import app.daos.PostInfoDao;
 import app.pojo.post.PostImage;
 import app.pojo.post.PostInfo;
+import app.service.SensitiveWorldFilter;
 import app.supported.Holder;
 import app.utils.Generator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,11 +24,16 @@ import java.util.Map;
 @Component
 public class PostServiceImp implements PostService {
 
+    private final String REPLACE_WORD = "**";
+
     @Autowired
     PostInfoDao postInfoDao;
 
     @Autowired
     Holder holder;
+
+    @Autowired
+    SensitiveWorldFilter sensitiveWorldFilter;
 
     @Override
     public List<PostInfo> getPostInfo(Long start, Long count) {
@@ -35,6 +41,8 @@ public class PostServiceImp implements PostService {
         for(PostInfo post : posts){
             List<PostImage> images = postInfoDao.getPostImages(post.getPostId());
             post.setPostImages(images);
+            post.setContent(sensitiveWorldFilter.filter(post.getContent(), REPLACE_WORD));
+            post.setTitle(sensitiveWorldFilter.filter(post.getTitle(), REPLACE_WORD));
         }
         return posts;
     }

@@ -3,16 +3,22 @@ package app.supported.interceptor;
 import app.daos.UserDao;
 import app.service.encryption.Jwt;
 import app.supported.Holder;
+import app.supported.annotations.Admin;
+import app.supported.annotations.CommonUser;
+import app.supported.annotations.LogRequired;
+import app.supported.annotations.Root;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.Writer;
+import java.lang.reflect.Method;
 
 /**
  * @Author Fizz Pu
@@ -35,7 +41,20 @@ public class GetIdInterceptor implements HandlerInterceptor {
     private Holder holder;
 
     @Override
-    public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
+    public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object handler) throws Exception {
+
+        LogRequired loginRequired = null;
+
+        if(handler instanceof HandlerMethod) {
+            Method method = ((HandlerMethod) handler).getMethod();
+            if (method != null) {
+                loginRequired = method.getAnnotation(LogRequired.class);
+            }
+        }
+
+        // 没有LogRequired注解, 直接放行, 否则校验token
+        if(loginRequired == null) return true;
+
         // 从请求头里获得token
         String token = httpServletRequest.getHeader("token");
         Long userId = null;
