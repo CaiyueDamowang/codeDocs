@@ -1,13 +1,3 @@
-//vue - esmodule
-export default {
-  name: 'Coponent',
-  data() {
-    return {
-
-    }
-  }
-}
-export const a = 1
 
 module.exports = {
     themeConfig: {
