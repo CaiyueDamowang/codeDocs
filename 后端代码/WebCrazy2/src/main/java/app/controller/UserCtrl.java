@@ -61,7 +61,9 @@ public class UserCtrl {
     void init(){
         logger.info("UserCtrl初始化成功");
     }
+    // http://domian/cumt/web/login
 
+    // get
     /**-----------------------------登录,注册----------------------------*/
     @CommonUser
     @RequestMapping(value = "/cumt/web/login", method = RequestMethod.POST)
