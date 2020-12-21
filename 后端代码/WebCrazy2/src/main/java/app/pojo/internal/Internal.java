@@ -1,7 +1,12 @@
 package app.pojo.internal;
 
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
+
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author myk
@@ -78,4 +83,5 @@ public class Internal {
     public void setLink(String link) {
         this.link = link;
     }
+
 }

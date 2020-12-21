@@ -2,6 +2,7 @@ package app.daos;
 
 import app.pojo.internal.Internal;
 import app.service.dataService.DataService;
+import app.service.internalService.InternalServiceImpl;
 import org.hibernate.Session;
 import org.hibernate.query.NativeQuery;
 import org.hibernate.query.Query;
@@ -24,6 +25,20 @@ import java.util.List;
 public class InternalDao {
     @Autowired
     DataService dataService;
+
+
+
+    //分页显示，每页行数固定为10
+    public List<Internal> getAllInternal(int pageNo){
+        int pageSize = 10;
+        Session  session = dataService.getSession();
+        String hql = "from Internal";
+        Query<Internal> query = session.createQuery(hql);
+        query.setFirstResult((pageNo-1)*pageSize);
+        query.setMaxResults(pageSize);
+        List<Internal> list = query.list();
+        return  list;
+    }
 
     //根据内推ID查找内推信息
     public Internal findInternalByID(int id){
