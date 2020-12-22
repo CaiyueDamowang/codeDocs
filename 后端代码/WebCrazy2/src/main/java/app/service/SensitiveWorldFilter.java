@@ -1,7 +1,5 @@
 package app.service;
 
-import org.springframework.stereotype.Component;
-
 import java.io.*;
 import java.util.*;
 
@@ -15,9 +13,11 @@ import java.util.*;
 // 1.利用敏感词建立有限状态自动机器
 // 2.识别优先状态自动即可
 
-
-@Component
 public class SensitiveWorldFilter {
+
+    public SensitiveWorldFilter(String path) throws IOException {
+        init(path);
+    }
 
     private  Node startNode;
 
@@ -39,9 +39,6 @@ public class SensitiveWorldFilter {
         }
     }
 
-    public SensitiveWorldFilter(String path) throws IOException {
-        init(path);
-    }
 
     /**
      * 将敏感词替换

@@ -1,7 +1,6 @@
 package app.pojo.post;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 import javax.persistence.*;
 import java.util.Date;

@@ -14,6 +14,7 @@ import app.supported.annotations.CommonUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
@@ -40,7 +41,7 @@ import java.util.List;
 // 4. 统一用json处理数据
 
 
-@RestController
+@Controller
 @RequestMapping(produces = "application/json;charset=utf8",consumes = "application/json")
 public class UserCtrl {
     private final Logger logger = LoggerFactory.getLogger(getClass());
@@ -63,13 +64,15 @@ public class UserCtrl {
     }
 
     /**-----------------------------登录,注册----------------------------*/
-    @CommonUser
+    @ResponseBody
     @RequestMapping(value = "/cumt/web/login", method = RequestMethod.POST)
-    public OrdRes getLogin(@RequestBody  User form) {
+    public OrdRes getLogin(@RequestBody User form) {
+        if(form == null)throw  new RuntimeException();
+        System.out.println(form);
         return userService.login(form);
     }
 
-    @CommonUser
+    @ResponseBody
     @RequestMapping(value = "/cumt/web/register", method = RequestMethod.POST)
     public OrdRes getRegister(@RequestBody  User form) {
         return userService.register(form);
@@ -77,7 +80,6 @@ public class UserCtrl {
 
     /**--------------------------------帖子---------------------------------------*/
     // 上传帖子
-    @CommonUser
     @RequestMapping(value = "/web/crazy/post", method = RequestMethod.POST)
     public OrdRes uploadPost(PostInfo postInfo) {
         return null;

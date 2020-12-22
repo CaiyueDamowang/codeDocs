@@ -1,12 +1,16 @@
 package app;
 
+import app.service.SensitiveWorldFilter;
 import app.supported.interceptor.GetIdInterceptor;
 import app.supported.interceptor.CheckIdentity;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.config.annotation.*;
+
+import java.io.IOException;
 
 
 /**
@@ -19,7 +23,11 @@ import org.springframework.web.servlet.config.annotation.*;
 // java代码进行配置
 @Configuration
 @EnableWebMvc
+@PropertySource("classpath:application.properties")
 public class AppConfig {
+
+    @Value("${sensitive.classpath}")
+    String sensitiveWordPath;
 
     /**
      * 创建第三方Bean,函数返回值自动装入ioc容器
@@ -29,15 +37,6 @@ public class AppConfig {
     public SessionFactory createSessionFactory(){
         org.hibernate.cfg.Configuration config = new org.hibernate.cfg.Configuration();
         return config.configure().buildSessionFactory();
-    }
-
-    /**
-     * 处理前端通过form data二进制流的方式提交的数据
-     * @return CommonsMultipartResolver
-     */
-    @Bean(name = "multipartResolver")
-    public CommonsMultipartResolver createMulitipartResolver(){
-        return new CommonsMultipartResolver();
     }
 
     /**
@@ -62,6 +61,11 @@ public class AppConfig {
                         excludePathPatterns("/cumt/web/login").excludePathPatterns("/cumt/web/register");
             }
         };
+    }
+
+    @Bean
+    public SensitiveWorldFilter sensitiveWorld() throws IOException {
+        return new SensitiveWorldFilter(sensitiveWordPath);
     }
 }
 

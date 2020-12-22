@@ -1,3 +1,4 @@
+/*
 package app.supported.aop;
 
 import app.supported.Holder;
@@ -10,12 +11,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
+*/
 /**
  * @Author Fizz Pu
  * @Date 2020/12/1 上午10:38
  * @Version 1.0
  * 失之毫厘，缪之千里！
- */
+ *//*
+
 
 @Aspect
 @Component
@@ -47,3 +50,4 @@ public class LoginAspect {
     public void after(){ }
 
 }
+*/
