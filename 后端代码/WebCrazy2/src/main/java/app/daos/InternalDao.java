@@ -28,9 +28,8 @@ public class InternalDao {
 
 
 
-    //分页显示，每页行数固定为10
-    public List<Internal> getAllInternal(int pageNo){
-        int pageSize = 10;
+    //分页查询
+    public List<Internal> getAllInternal(int pageNo,int pageSize){
         Session  session = dataService.getSession();
         String hql = "from Internal";
         Query<Internal> query = session.createQuery(hql);
@@ -72,6 +71,16 @@ public class InternalDao {
         session.beginTransaction().commit();
         session.close();
         return list;
+    }
+
+    public Internal findInternalByLink(String link){
+        Session session = dataService.getSession();
+        String hql = "from Internal where link = ?";
+        Query<Internal> query = session.createQuery(hql).setParameter(0,link);
+        Internal internal = query.uniqueResult();
+        session.beginTransaction().commit();
+        session.close();
+        return internal;
     }
 
     //时间戳： yyyy-MM-dd

@@ -1,6 +1,7 @@
 package app.service.internalService;
 
 import app.daos.InternalDao;
+import app.pojo.OrdRes;
 import app.pojo.internal.Internal;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -17,8 +18,13 @@ public class InternalServiceImpl implements InternalService{
     InternalDao internalDao;
 
     @Override
-    public List<Internal> getInternal(int pageNo) {
-        return internalDao.getAllInternal(pageNo);
+    public List<Internal> getInternal(int pageNo , int pageSize) {
+        return internalDao.getAllInternal(pageNo,pageSize);
     }
 
+    @Override
+    public OrdRes addInternal(Internal internal) {
+        internalDao.add(internal);
+        return new OrdRes(200,"添加成功！");
+    }
 }

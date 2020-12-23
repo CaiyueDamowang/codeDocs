@@ -1,12 +1,7 @@
 package app.pojo.internal;
 
-import org.hibernate.Session;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.query.Query;
-
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 
 /**
  * @author myk
@@ -35,6 +30,29 @@ public class Internal {
 
     @Column (name = "internal_link")
     private String link;
+
+    @Column (name = "internal_company")
+    private String company;
+
+    @Column (name = "internal_companyMsg")
+    private String companyMsg;
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public String getCompanyMsg() {
+        return companyMsg;
+    }
+
+    public void setCompanyMsg(String companyMsg) {
+        this.companyMsg = companyMsg;
+    }
+
 
     public int getId() {
         return id;
