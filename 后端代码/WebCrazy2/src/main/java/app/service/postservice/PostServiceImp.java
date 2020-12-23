@@ -14,12 +14,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
+/*
  * @Author Fizz Pu
  * @Date 2020/10/23 下午4:47
  * @Version 1.0
  * 失之毫厘，缪之千里！
  */
+
+
 
 @Component
 public class PostServiceImp implements PostService {
@@ -41,8 +43,8 @@ public class PostServiceImp implements PostService {
         for(PostInfo post : posts){
             List<PostImage> images = postInfoDao.getPostImages(post.getPostId());
             post.setPostImages(images);
-            post.setContent(sensitiveWorldFilter.filter(post.getContent(), REPLACE_WORD));
-            post.setTitle(sensitiveWorldFilter.filter(post.getTitle(), REPLACE_WORD));
+           post.setContent(sensitiveWorldFilter.filter(post.getContent(), REPLACE_WORD));
+           post.setTitle(sensitiveWorldFilter.filter(post.getTitle(), REPLACE_WORD));
         }
         return posts;
     }
