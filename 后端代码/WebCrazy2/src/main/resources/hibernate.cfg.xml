@@ -5,17 +5,17 @@
 <hibernate-configuration>
     <session-factory>
         <!-- 配置连接数据库的基本信息 jdbc:mysql://localhost:3306/hibernate-->
-        <property name="connection.url">jdbc:mysql://localhost:3306/cumt?allowPublicKeyRetrieval=true</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/cumt?useSSL=false</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 
         <property name="connection.username">root</property>
-        <property name="connection.password">myk715505</property>
+        <property name="connection.password">jiege666@G</property>
 
         <!-- 配置 hibernate 的基本信息 -->
         <!--所使用的数据库方言 MySQL8Dialect-->
-        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
         <!-- 执行操作时是否在控制台打印 SQL -->
-        <property name="show_sql">true</property>
+        <property name="show_sql">false</property>
         <!-- 是否对 SQL 进行格式化,例如语句显示会换行 -->
         <property name="format_sql">true</property>
         <!-- 指定自动生成数据表的策略 -->
@@ -49,8 +49,10 @@
         <!--mapping class="app.comment.commentpojo.Comment"/-->
         <!--通过xml文件配置-->
         <!--mapping resource="User.hbm.xml"/-->
-<!--        <mapping class="app.pojo.userservice.User"/>-->
-        <mapping class="app.pojo.internal.Internal"/>
+        <mapping class="app.pojo.userservice.User"/>
+        <mapping class="app.pojo.post.PostInfo"/>
+        <mapping class="app.pojo.post.PostImage"/>
+        <mapping class="app.pojo.post.Comment"/>
 
     </session-factory>
 </hibernate-configuration>

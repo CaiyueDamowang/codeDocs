@@ -10,6 +10,7 @@ import app.service.postservice.CommentService;
 import app.service.postservice.PostService;
 import app.service.timeservice.CurTime;
 import app.service.userservice.UserService;
+import app.supported.Holder;
 import app.supported.annotations.CommonUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,13 +20,10 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletResponse;
-import java.awt.*;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.io.Writer;
-import java.nio.Buffer;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author Fizz Pu
@@ -47,6 +45,9 @@ public class UserCtrl {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
+    Holder holder;
+
+    @Autowired
     CommentService commentService;
 
     @Autowired
@@ -62,15 +63,11 @@ public class UserCtrl {
     void init(){
         logger.info("UserCtrl初始化成功");
     }
-    // http://domian/cumt/web/login
 
-    // get
     /**-----------------------------登录,注册----------------------------*/
     @ResponseBody
     @RequestMapping(value = "/cumt/web/login", method = RequestMethod.POST)
     public OrdRes getLogin(@RequestBody User form) {
-        if(form == null)throw  new RuntimeException();
-        System.out.println(form);
         return userService.login(form);
     }
 
@@ -82,16 +79,24 @@ public class UserCtrl {
 
     /**--------------------------------帖子---------------------------------------*/
     // 上传帖子
+    @ResponseBody
     @RequestMapping(value = "/web/crazy/post", method = RequestMethod.POST)
-    public OrdRes uploadPost(PostInfo postInfo) {
-        return null;
+    public Map<String, String> uploadPost(@RequestBody PostInfo postInfo) {
+        Long userId = holder.getUser();
+
+        if(userId == null){
+            userId = 1L;
+        }
+
+        postInfo.setUserId(userId);
+
+        return postService.upLoadPost(postInfo);
     }
 
     // 获得帖子
-    @CommonUser
     @RequestMapping(value = "/web/crazy/post", method = RequestMethod.GET)
-    public PostInfo getPost(@RequestParam int start, @RequestParam int count){
-        return null;
+    public List<PostInfo> getPost(@RequestParam int pageIndex, @RequestParam int count){
+        return postService.getPostInfo(pageIndex, count);
     }
 
     /**
@@ -160,5 +165,15 @@ public class UserCtrl {
         commentService.saveComment(comment);
         return new OrdRes(0, "保存成功");
     }
+
+    /**
+     * 点赞
+     */
+    @RequestMapping(value = "/web/crazy/like", method = RequestMethod.GET)
+    public OrdRes like(Comment comment){
+        return null;
+    }
 }
+
+
 

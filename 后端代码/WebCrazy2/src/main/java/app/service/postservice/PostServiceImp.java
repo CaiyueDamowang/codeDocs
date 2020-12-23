@@ -38,8 +38,8 @@ public class PostServiceImp implements PostService {
     SensitiveWorldFilter sensitiveWorldFilter;
 
     @Override
-    public List<PostInfo> getPostInfo(Long start, Long count) {
-        List<PostInfo> posts = postInfoDao.getPostInfo(start, count);
+    public List<PostInfo> getPostInfo(Integer pageIndex, Integer count) {
+        List<PostInfo> posts = postInfoDao.getPostInfo(pageIndex, count);
         for(PostInfo post : posts){
             List<PostImage> images = postInfoDao.getPostImages(post.getPostId());
             post.setPostImages(images);
@@ -66,7 +66,6 @@ public class PostServiceImp implements PostService {
         }
 
         // 1. 保存帖子
-        postInfo.setUserId(holder.getUser());
         Long postId = postInfoDao.savePost(postInfo);
         // 2. 保存图片
         List<PostImage> postImages = postInfo.getPostImages();

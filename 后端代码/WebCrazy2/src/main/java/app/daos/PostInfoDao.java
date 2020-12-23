@@ -10,6 +10,7 @@ import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
@@ -28,12 +29,17 @@ public class PostInfoDao {
 
     /**
      * 分页查询帖子
-     * @param start 开始位置
+     * @param start 页数
      * @param count 查找count条帖子
      * @return
      */
-    public List<PostInfo>  getPostInfo(Long start, Long count){
-        return  null;
+    public List<PostInfo>  getPostInfo(Integer start, Integer count){
+        Session session = dataService.getSession();
+        session.beginTransaction();
+
+        session.getTransaction().commit();
+        session.close();
+        return null;
     }
 
     /**
@@ -42,7 +48,14 @@ public class PostInfoDao {
      * @return 帖子id
      */
     public Long savePost(PostInfo post){
-        return 0L;
+        Long id;
+        Session session = dataService.getSession();
+        session.beginTransaction();
+        session.save(post);
+        session.getTransaction().commit();
+        session.close();
+        id = post.getPostId();
+        return id;
     }
 
     /**
@@ -73,7 +86,14 @@ public class PostInfoDao {
      * @return 图片id
      */
     public Long saveImage(PostImage image){
-        return 0L;
+        Long id;
+        Session session = dataService.getSession();
+        session.beginTransaction();
+        session.save(image);
+        session.getTransaction().commit();
+        session.close();
+        id = image.getPostId();
+        return id;
     }
 
     /**
@@ -81,8 +101,12 @@ public class PostInfoDao {
      * @param image
      * @return 更新的id
      */
-    public Long update(PostImage image){
-        return 0L;
+    public void update(PostImage image){
+        Session session = dataService.getSession();
+        session.beginTransaction();
+        session.update(image);
+        session.getTransaction().commit();
+        session.close();
     }
 
     /**

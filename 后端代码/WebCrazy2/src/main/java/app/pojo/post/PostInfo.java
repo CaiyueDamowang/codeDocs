@@ -34,10 +34,16 @@ public class PostInfo {
     Long state;
 
     @Column(name = "post_content")
-    String Content;
+    String content;
 
     @Transient
     List<PostImage> postImages ;
+
+
+    @Override
+    public String toString() {
+        return title + " " + content + " " + postImages;
+    }
 
     public Long getPostId() {
         return postId;
@@ -64,7 +70,11 @@ public class PostInfo {
     }
 
     public String getContent() {
-        return Content;
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public List<PostImage> getPostImages() {
@@ -93,10 +103,6 @@ public class PostInfo {
 
     public void setState(Long state) {
         this.state = state;
-    }
-
-    public void setContent(String content) {
-        Content = content;
     }
 
     public void setPostImages(List<PostImage> postImages) {

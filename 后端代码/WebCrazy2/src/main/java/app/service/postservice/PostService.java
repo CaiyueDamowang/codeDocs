@@ -18,12 +18,12 @@ import java.util.Map;
 public interface PostService {
 
     /**
-     * 获得帖子，按时间排序，从start开始，每次拿count个
+     * 获得帖子，按时间排序，从pageIndex开始，每次拿count个
      * @param start
      * @param count
      * @return
      */
-    List<PostInfo> getPostInfo(Long start, Long count);
+    List<PostInfo> getPostInfo(Integer start, Integer count);
 
     /**
      * 获得帖子的图片

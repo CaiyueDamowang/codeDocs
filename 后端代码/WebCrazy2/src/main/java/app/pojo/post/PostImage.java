@@ -1,9 +1,6 @@
 package app.pojo.post;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
 /**
  * @Author Fizz Pu
@@ -16,6 +13,8 @@ import javax.persistence.Transient;
 @Table(name = "post_img")
 public class PostImage {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "img_id")
     Integer img_id;
 
