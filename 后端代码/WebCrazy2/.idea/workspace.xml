@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7db05ecc-2285-44c1-b3d3-39d666a490c4" name="Default Changelist" comment="帖子上传接口更新,遇到一个bug,base64文本过大,数据库要换字段,明天弄">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WebCrazy2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9cf98173-f0d1-4a48-9986-f1b672e763c1/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/post_image_tb.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/post_tb.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/user_tb.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebCrazy2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/conf/RedisConf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/AdminCtrl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/RootCtrl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controller/UserCtrl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/daos/CommentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/daos/PostInfoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/daos/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/pojo/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/pojo/OrdRes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/pojo/post/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/pojo/post/PostImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/pojo/post/PostInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/pojo/userservice/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/SensitiveWorldFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/dataService/DataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/encryption/Base64.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/encryption/HashTools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/encryption/Jwt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/postservice/CommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/postservice/CommentServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/postservice/PostService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/postservice/PostServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/timeservice/CurTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/userservice/AbstractUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/userservice/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/supported/Holder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/supported/annotations/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/supported/annotations/CommonUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/supported/annotations/LogRequired.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/supported/annotations/Root.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/supported/aop/LoginAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/supported/interceptor/CheckIdentity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/supported/interceptor/GetIdInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/utils/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sensitive-word.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/post_show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/utils/SensitiveWorldFilterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/AppConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/conf/RedisConf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/UserCtrl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/daos/CommentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/pojo/OrdRes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/pojo/post/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/SensitiveWorldFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/dataService/DataService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/encryption/Base64.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/postservice/CommentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/postservice/PostServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/service/timeservice/CurTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sensitive-word.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jjBft0ujqr52r38XXQhVxR6O3u" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../Android/Sdk" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BackCode" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="app.utils" />
+      <recent name="app" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="app" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/webapp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Smart Tomcat.cumtweb">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.Main" />
+      <module name="WebCrazy2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppConfigTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebCrazy2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app" />
+      <option name="MAIN_CLASS_NAME" value="app.AppConfigTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppConfigTest.testPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebCrazy2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app" />
+      <option name="MAIN_CLASS_NAME" value="app.AppConfigTest" />
+      <option name="METHOD_NAME" value="testPath" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SensitiveWorldFilterTest.filter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebCrazy2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.utils" />
+      <option name="MAIN_CLASS_NAME" value="app.utils.SensitiveWorldFilterTest" />
+      <option name="METHOD_NAME" value="filter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebCrazy2 []" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" value="" />
+      <option name="docBase" value="" />
+      <option name="envOptions" />
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/8.5.61" />
+          <option name="number" value="0" />
+          <option name="path" value="$PROJECT_DIR$/../Desktop/apache-tomcat-8.5.61" />
+          <option name="version" value="8.5.61.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cumtweb" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" singleton="false">
+      <option name="adminPort" value="9000" />
+      <option name="contextPath" value="/WebCrazy2" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="9090" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/8.5.61" />
+          <option name="number" value="0" />
+          <option name="path" value="$USER_HOME$/Desktop/apache-tomcat-8.5.61" />
+          <option name="version" value="8.5.61.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.AppConfigTest.testPath" />
+      <item itemvalue="JUnit.AppConfigTest.test" />
+      <item itemvalue="JUnit.SensitiveWorldFilterTest.filter" />
+      <item itemvalue="Maven.WebCrazy2 []" />
+      <item itemvalue="Smart Tomcat.cumtweb" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SensitiveWorldFilterTest.filter" />
+        <item itemvalue="JUnit.AppConfigTest.test" />
+        <item itemvalue="JUnit.AppConfigTest.testPath" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7db05ecc-2285-44c1-b3d3-39d666a490c4" name="Default Changelist" comment="" />
+      <created>1604307726044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604307726044</updated>
+    </task>
+    <task id="LOCAL-00001" summary="帖子上传接口更新,遇到一个bug,base64文本过大,数据库要换字段,明天弄">
+      <created>1608736267227</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608736267227</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="帖子上传接口更新,遇到一个bug,base64文本过大,数据库要换字段,明天弄" />
+    <option name="LAST_COMMIT_MESSAGE" value="帖子上传接口更新,遇到一个bug,base64文本过大,数据库要换字段,明天弄" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="443" y="98" width="1024" height="852" key="#Project_Structure" timestamp="1604307870215">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="443" y="98" width="1024" height="852" key="#Project_Structure/0.27.1920.987@0.27.1920.987" timestamp="1604307870215" />
+    <state x="418" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609341613025">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="418" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.987@0.27.1920.987" timestamp="1609341613025" />
+    <state x="652" y="313" width="606" height="421" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606404748583">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="652" y="313" width="606" height="421" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.987@0.27.1920.987" timestamp="1606404748583" />
+    <state x="1248" y="204" width="563" height="639" key="#com.intellij.ide.util.MemberChooser" timestamp="1608732259273">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="1248" y="204" width="563" height="639" key="#com.intellij.ide.util.MemberChooser/0.27.1920.987@0.27.1920.987" timestamp="1608732259273" />
+    <state x="594" y="437" width="731" height="173" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1608625702361">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="594" y="437" width="731" height="173" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.27.1920.987@0.27.1920.987" timestamp="1608625702361" />
+    <state x="709" y="375" width="501" height="305" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606229514656">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="709" y="375" width="501" height="305" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1920.987@0.27.1920.987" timestamp="1606229514656" />
+    <state x="285" y="27" width="1330" height="987" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606401674597">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="285" y="27" width="1330" height="987" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.987@0.27.1920.987" timestamp="1606401674597" />
+    <state x="693" y="267" width="524" height="514" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606229586327">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="693" y="267" width="524" height="514" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.987@0.27.1920.987" timestamp="1606229586327" />
+    <state x="543" y="238" width="824" height="571" key="DBNavigator.DatasetFilterDialog" timestamp="1608729772276">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="543" y="238" width="824" height="571" key="DBNavigator.DatasetFilterDialog/0.27.1920.987@0.27.1920.987" timestamp="1608729772276" />
+    <state x="493" y="178" width="924" height="691" key="DBNavigator.ProjectSettingsDialog" timestamp="1608729716416">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="493" y="178" width="924" height="691" key="DBNavigator.ProjectSettingsDialog/0.27.1920.987@0.27.1920.987" timestamp="1608729716416" />
+    <state x="742" y="281" width="424" height="491" key="FileChooserDialogImpl" timestamp="1609342645962">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="742" y="281" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.987@0.27.1920.987" timestamp="1609342645962" />
+    <state width="1866" height="406" key="GridCell.Tab.0.bottom" timestamp="1609342649421">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state width="1866" height="406" key="GridCell.Tab.0.bottom/0.27.1920.987@0.27.1920.987" timestamp="1609342649421" />
+    <state width="1866" height="406" key="GridCell.Tab.0.center" timestamp="1609342649421">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state width="1866" height="406" key="GridCell.Tab.0.center/0.27.1920.987@0.27.1920.987" timestamp="1609342649421" />
+    <state width="1866" height="406" key="GridCell.Tab.0.left" timestamp="1609342649420">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state width="1866" height="406" key="GridCell.Tab.0.left/0.27.1920.987@0.27.1920.987" timestamp="1609342649420" />
+    <state width="1866" height="406" key="GridCell.Tab.0.right" timestamp="1609342649421">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state width="1866" height="406" key="GridCell.Tab.0.right/0.27.1920.987@0.27.1920.987" timestamp="1609342649421" />
+    <state width="1866" height="275" key="GridCell.Tab.1.bottom" timestamp="1608730111185">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state width="1866" height="275" key="GridCell.Tab.1.bottom/0.27.1920.987@0.27.1920.987" timestamp="1608730111185" />
+    <state width="1866" height="275" key="GridCell.Tab.1.center" timestamp="1608730111184">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state width="1866" height="275" key="GridCell.Tab.1.center/0.27.1920.987@0.27.1920.987" timestamp="1608730111184" />
+    <state width="1866" height="275" key="GridCell.Tab.1.left" timestamp="1608730111184">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state width="1866" height="275" key="GridCell.Tab.1.left/0.27.1920.987@0.27.1920.987" timestamp="1608730111184" />
+    <state width="1866" height="275" key="GridCell.Tab.1.right" timestamp="1608730111185">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state width="1866" height="275" key="GridCell.Tab.1.right/0.27.1920.987@0.27.1920.987" timestamp="1608730111185" />
+    <state x="493" y="178" width="924" height="691" key="Maven.ArtifactSearchDialog" timestamp="1608605810680">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="493" y="178" width="924" height="691" key="Maven.ArtifactSearchDialog/0.27.1920.987@0.27.1920.987" timestamp="1608605810680" />
+    <state x="441" y="155" width="1037" height="737" key="SettingsEditor" timestamp="1608735773393">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="441" y="155" width="1037" height="737" key="SettingsEditor/0.27.1920.987@0.27.1920.987" timestamp="1608735773393" />
+    <state x="555" y="255" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1608736281709">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="555" y="255" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1920.987@0.27.1920.987" timestamp="1608736281709" />
+    <state x="734" y="308" width="444" height="432" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1607008530796">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="734" y="308" width="444" height="432" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.27.1920.987@0.27.1920.987" timestamp="1607008530796" />
+    <state x="604" y="296" width="701" height="456" key="git4idea.merge.GitPullDialog" timestamp="1608735797916">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="604" y="296" width="701" height="456" key="git4idea.merge.GitPullDialog/0.27.1920.987@0.27.1920.987" timestamp="1608735797916" />
+    <state x="700" y="411" width="510" height="226" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1608735865181">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="700" y="411" width="510" height="226" key="git4idea.remote.GitConfigureRemotesDialog/0.27.1920.987@0.27.1920.987" timestamp="1608735865181" />
+    <state x="0" y="27" width="747" height="923" key="new project wizard" timestamp="1608713413916">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="0" y="27" width="747" height="923" key="new project wizard/0.27.1920.987@0.27.1920.987" timestamp="1608713413916" />
+    <state x="623" y="242" key="search.everywhere.popup" timestamp="1608604324909">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="623" y="242" key="search.everywhere.popup/0.27.1920.987@0.27.1920.987" timestamp="1608604324909" />
+  </component>
+</project>

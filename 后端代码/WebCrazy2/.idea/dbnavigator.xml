@@ -23,7 +23,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc">
+        <schema name="cumt" object-types="table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc">
@@ -64,7 +68,6 @@
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/SQL/post_tb.sql" connection-id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc" session-id="MAIN" current-schema="cumt" />
-    <mapping file-url="file://$PROJECT_DIR$/SQL/post_image_tb.sql" connection-id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc" session-id="MAIN" current-schema="cumt" />
     <mapping file-url="file://$PROJECT_DIR$/SQL/user_tb.sql" connection-id="26fdba9f-d0f2-44a3-b130-65b1b3571fdc" session-id="MAIN" current-schema="cumt" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
